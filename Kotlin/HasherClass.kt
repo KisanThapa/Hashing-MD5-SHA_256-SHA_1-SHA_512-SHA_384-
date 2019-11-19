@@ -23,8 +23,8 @@ class HasherClass {
             }
             try {
                 // Create Hash Type
-                val digest = java.security.MessageDigest
-                    .getInstance(hashType.value)
+                val digest = java.security.MessageDigest.getInstance(hashType.value)
+
                 digest.update(value.toByteArray())
                 val messageDigest = digest.digest()
 
